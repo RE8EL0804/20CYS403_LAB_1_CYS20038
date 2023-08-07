@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contact-form" method="POST" action="process.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <!-- reCAPTCHA or hCaptcha integration -->
+            <div class="captcha-container" id="captcha-container">
+                    <div class="h-captcha" data-sitekey="8179dfaf-3126-4cf5-a31a-9f3c565a327e"></div>
+            </div>
+
+            <!-- Double opt-in checkbox -->
+            <label>
+                <input type="checkbox" name="double_opt_in" id="double-opt-in">
+                I agree to receive emails.
+            </label>
+
+            <!-- Test question -->
+            <label for="test-answer">What is 5 + 3? (Anti-bot question)</label>
+            <input type="number" id="test-answer" name="test_answer" required>
+
+            <!-- Honeypot field -->
+            <input type="text" name="honeypot" id="honeypot" style="display: none;">
+
+            <!-- Geolocation and IP address -->
+            <input type="hidden" name="ip_address" id="ip-address">
+
+            <!-- Submit button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

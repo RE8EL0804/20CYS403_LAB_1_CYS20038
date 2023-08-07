@@ -1,0 +1,11 @@
+1. Setup Captcha for Forms(reCAPTCHA, hCaptcha)
+2. Double opt-in form
+3. Add a test question
+4. Add Honeypots
+5. lmplement time-analysis.
+6. Hide target request
+7. Form validation after geolocation of the IP address.
+8. Blacklist IPs and limited IP addresses
+9. Email address validation API
+10. Validation
+11. Block copy and paste in your forms
